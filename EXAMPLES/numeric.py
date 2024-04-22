@@ -5,6 +5,10 @@ c = 20.22
 d = 0o123        # Octal
 e = 0xdeadbeef   # Hex
 f = 0b10011101   # Binary 
+#  0234324   INVALILD
+# 123
+# 0123
+
 
 print("a, b, c", a, b, c)
 print("a + b", a + b)
