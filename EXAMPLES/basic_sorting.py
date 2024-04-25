@@ -9,3 +9,4 @@ fruits = ["pomegranate", "cherry", "apricot", "date", "Apple", "lemon", "Kiwi",
 sorted_fruit = sorted(fruits)  # sorted() returns a list
 
 print(sorted_fruit)
+

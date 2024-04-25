@@ -1,5 +1,12 @@
+import sys
+# absolute
+#  C:/users/bob/mydata/wombat.txt
+#  //mydrive/something/else/myfile.txt
 
-FILE_NAME = '../DATA/mary.txt'
+#  /users/jstrick/projects/chili.txt  linux/mac
+# FILE_NAME = '../DATA/mary.txt'  # . means current folder  .. means parent folder
+FILE_NAME = sys.argv[1]   # get path from command line
+#  ./foo.txt   ../foo.txt  ../spam/foo.txt 
 
 mary_in = open(FILE_NAME)  # open file for reading
 # read file...

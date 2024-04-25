@@ -1,4 +1,3 @@
-
 from pprint import pprint
 
 knight_info = {}  # create empty dict
@@ -13,6 +12,10 @@ print()
 
 for name, info in knight_info.items():
     print(info[0], name)
-
 print()
+
+print(knight_info['Robin'])
+print()
+
 print(knight_info['Robin'][2])
+print()

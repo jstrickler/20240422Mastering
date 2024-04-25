@@ -1,0 +1,3 @@
+import mymod
+
+mymod.hello()

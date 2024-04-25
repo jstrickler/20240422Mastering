@@ -1,3 +1,4 @@
+import sys
 
 try:
     x = 5
@@ -6,6 +7,7 @@ try:
     print("z is", z)
 except TypeError as err:    # Catch TypeError
     print("Caught exception:", err)
+    sys.exit()
 finally:
     print("Don't care whether we had an exception")  # Print whether TypeError is caught or not
 
@@ -17,6 +19,9 @@ try:
     z = x + y
     print("Bottom of try")
 except TypeError as err:
+    # log error message
     print("Caught exception:", err)
+    print("EXITING PROGRAM!")
+    sys.exit()
 finally:
     print("Still don't care whether we had an exception")
