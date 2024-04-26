@@ -1,11 +1,10 @@
-
 import requests
 
 URL = 'http://www.python.org'
 
 response = requests.get(URL)
 
-if response.status_code == requests.codes.OK:
+if response.status_code == requests.codes.OK:   # i.e., 200
 
     for header, value in sorted(response.headers.items()): # response.headers is a dictionary of the headers
         print("{:20.20s} {}".format(header, value))

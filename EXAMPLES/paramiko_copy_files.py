@@ -4,7 +4,7 @@ from paramiko import Transport, SFTPClient
 
 # In real life, don't hard-code password in script -- do one of these:
 # with open('my_secret_file.txt') as secret_in:
-#     password = secret_in.read().restrip()
+#     password = secret_in.read().rstrip()
 # password = os.getenv("REMOTE_PASSWORD")
 
 REMOTE_DIR = 'text_files'

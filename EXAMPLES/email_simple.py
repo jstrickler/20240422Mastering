@@ -5,7 +5,7 @@ from datetime import datetime
 
 TIMESTAMP = datetime.now().ctime()  # get a time string for the current date/time
 
-SENDER = 'jstrick@mindspring.com'
+SENDER = 'jstrickler@gmail.com'
 RECIPIENTS = ['jstrickler@gmail.com']
 MESSAGE_SUBJECT = 'Python SMTP example'
 
@@ -31,5 +31,7 @@ try:
     smtp.send_message(msg)  # send the message
 except smtplib.SMTPException as err:
     print("Unable to send mail:", err)
+else:
+    print("Message sent.")
 finally:
     smtp.quit()  # disconnect from SMTP server

@@ -1,0 +1,9 @@
+import os
+import  pypdf
+
+for each job_folder_name in os.listdir('main PDF folder')
+    create a pdf writer
+        for each page file in os.listdir('specific job folder')
+            open page file with pdf reader
+                write file to pdf writer
+        save pdf with folder name + '.pdf'

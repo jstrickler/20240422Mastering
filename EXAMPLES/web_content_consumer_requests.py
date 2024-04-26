@@ -19,7 +19,7 @@ def main(args):
         # ssl, proxy, cookies, headers, etc.
     )  # send HTTP request and get HTTP response
 
-    if response.status_code == requests.codes.OK:  # 200?
+    if response.ok:  # 200?
         data = response.json()  # convert JSON content to Python data structure
         for entry in data: # check for results
             if isinstance(entry, dict):
