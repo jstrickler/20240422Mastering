@@ -1,5 +1,8 @@
 from collections import defaultdict
 
+def get_zero():
+    return 0
+
 dd = defaultdict(lambda: 0)  # create default dict with function that returns 0
 
 dd['spam'] = 10  # assign some values to the dict

@@ -1,14 +1,16 @@
+# all lower case
 fruits = ["pomegranate", "cherry", "apricot", "apple",
 "lemon", "kiwi", "orange", "lime", "watermelon", "guava",
 "papaya", "fig", "pear", "banana", "tamarind", "persimmon",
 "elderberry", "peach", "blueberry", "lychee", "grape", "date"]
 
+# mixed case
 fruits = ["pomegranate", "cherry", "apricot", "Apple",
 "lemon", "Kiwi", "ORANGE", "lime", "Watermelon", "guava",
 "Papaya", "FIG", "pear", "banana", "Tamarind", "Persimmon",
 "elderberry", "peach", "BLUEberry", "lychee", "GRAPE", "date"]
 
-nums = [800, 80, 1000, 32, 255, 400, 5, 5000]
+nums = [800, 80, 1000, 32, -3, 8, 18, 255, 400, 5, 5000]
 
 people = [
     ('Melinda', 'Gates', 'Gates Foundation', '1964-08-15'),
@@ -25,7 +27,7 @@ people = [
     ('Ada', 'Lovelace','Babbage calculator', '1815-12-10'),
     ('Larry', 'Page', 'Google', '1973-03-26'),
     ('Linus', 'Torvalds', 'Linux', '1969-12-28'),
-
+]
 
 airports = {
     'EWR': 'Newark',

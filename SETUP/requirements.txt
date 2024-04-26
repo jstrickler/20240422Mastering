@@ -1,4 +1,12 @@
-mypy
-paramiko
-python-dateutil
-requests
+build
+cookiecutter
+ipython
+iPywidgets
+jupyter
+jupyterlab
+matplotlib
+numpy
+pandas
+pymongo
+scipy
+twine

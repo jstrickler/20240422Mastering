@@ -1,4 +1,3 @@
-
 import re
 
 s = """lorem ipsum M-302 dolor sit amet, consectetur r-99 adipiscing elit, sed do
@@ -9,10 +8,13 @@ voluptate velit esse cillum dolore U901 eu fugiat nulla pariatur.
 Excepteur sint occaecat A-110 cupidatat non proident, sunt in H-332 culpa qui 
 officia deserunt Y-45 mollit anim id est laborum"""
 
+# groups
+#            0-------------
+#            1----   2-----
 pattern = r'([A-Z])-(\d{2,3})'  # parens delimit groups
 
 print("Group         start  end")
-print("0      1  2")
+print("0      1   2")
 print("-" * 25)
 
 for m in re.finditer(pattern, s):

@@ -4,7 +4,7 @@ from dateutil.tz import gettz
 
 tzinfos = {
     'IST': gettz('Asia/Kolkata'),
-    'GMC': gettz('Europe/London'),
+    'GMT': gettz('Europe/London'),
     'AEST': gettz('Australia/Sydney'),
     'EST': gettz('US/Eastern'),
     'CST': gettz('America/Chicago'),

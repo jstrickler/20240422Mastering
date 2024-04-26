@@ -24,8 +24,12 @@ data = [  # list of data structures
 
 with open('../TEMP/pickled_data.pic', 'wb') as pic_out:  # open pickle file for writing in binary mode
     pickle.dump(data, pic_out)  # serialize data structures to pickle file
+    pic_data = pickle.dumps(data)  # serialize to binary string (bytes)
 
 with open('../TEMP/pickled_data.pic', 'rb') as pic_in:  # open pickle file for reading in binary mode
     pickled_data = pickle.load(pic_in)  # de-serialize pickle file back into data structures
+    orig_data = pickle.loads(pic_data)
 
 pprint(pickled_data)  # view data structures
+print('-' * 60)
+pprint(orig_data)

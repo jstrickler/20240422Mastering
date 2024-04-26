@@ -2,11 +2,7 @@
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
-# the above is required
-
-##################################################
-# used when only using this file, not setup.cfg
-##################################################
+# the above is always required
 
 [project]
 name = "{{cookiecutter.module_slug}}"
@@ -15,7 +11,7 @@ authors = [
     { name="{{cookiecutter.author_name}}", email="{{cookiecutter.author_email}}" },
 ]
 description = "{{cookiecutter.module_description}}"
-readme = "README.{{cookiecutter.readme_extension}}"
+readme = "README.{{cookiecutter.readme_format}}"
 requires-python = ">=3.0"
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -25,16 +21,12 @@ classifiers = [
 
 dependencies = [
 #    'roman >= 3.0',
-#    'requests[security] < 3',
-#    'subprocess32; python_version < "3.2"',
 ]
 
-#[tool.setuptools]
-#packages=["temperature"]
-
-# [project.scripts]
-# script1='{{cookiecutter.module_slug}}:_cli_script1'
-# script2='{{cookiecutter.module_slug}}:_cli_script2'
+{% if cookiecutter.has_scripts == 'y' %}
+[project.scripts]
+script='{{cookiecutter.module_slug}}:_cli_script'
+{% endif %}
 
 {% if cookiecutter.author_url != "Author URL" %}
 [project.urls]
